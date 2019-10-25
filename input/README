@@ -1,0 +1,34 @@
+**************************************************************************************
+*************** BY - Ravi Prakash Mishra (B.Tech 3rd year, NIT Sikkim)****************
+**************************************************************************************
+
+##########################################################################
+
+-> Xml Parser initializes loads weights and bias of all the layers and makes Hash map with Layer object as value
+
+-> get object by passing path of xml file produced by npy2csv.py as argument to constructor
+
+ 	XmlParser xml = new XmlParser(<xml-path>);
+
+
+-> xml.getLayers() - returns no. of layers in graph
+
+-> xml.getHashMap() - returns hash map of layers in graph as <String, Layer> 
+	> key is name of layer
+	> value is object of type Layer 
+
+-> Layer class has attribute type which returns type of layer
+	> if layer is convolution typecast object to Conv
+	> else typecast it to FC type
+
+-> Conv class has methods:
+	> getWeight() - returns 4D array of weights [k_h k_w in_c out_c].
+	> getBias() - returns array of bias with size equal to out_c
+
+-> FC class has methods:
+	> getWeight() - returns 2D array of weights [inputs outputs]
+	> getBias() - returns array of Bias with size equal to outputs
+
+-> xml.getLayerNames() - returns string array containing names of the layers 
+
+
