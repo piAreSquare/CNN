@@ -4,6 +4,10 @@ import xml.dom.minidom as minidom
 import sys, getopt, os
 import ntpath
 from pathlib import Path
+'''
+.npy file should contain weights and bais of all layers in form of dictionary
+
+'''
 
 
 def addLayer(graph,key, layer_type, shape, out_path):
