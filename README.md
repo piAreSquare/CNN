@@ -6,7 +6,7 @@
 
 ########################## HOW TO USE ####################################
 
-Usage: python3 npy2csv.py -i <input-file.npy > -o <output directory>
+Usage: python3 npy2csv.py -i <input-file.npy > -o <output_directory>
 
 ##########################################################################
 
